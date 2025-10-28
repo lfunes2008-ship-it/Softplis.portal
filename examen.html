@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<button onclick="cambiarColor()">Cambiar color de fondo</button>
+
+<br><br>
+
+<label for="opciones">Elige una opcion</label>
+<select id="opciones" onchange="mostrarOpcion()">
+    <option value="....">Seleciones</option>
+    <option value="Verde">Barca</option>
+    <option value="Azul">Madrid</option>
+    <Option value="Software">Software</Option>
+</select>
+
+<p id="resultado"></p>
+
+<script>
+    function cambiarColor(){
+        const colores = ["#ffcc99", "#9999ff", "#ff9999", "#ffff99"];
+        const colorAleatorio = colores[Math.floor(Math.random() * colores.length)];
+        document.body.style.backgroundColor = colorAleatorio;
+    }
+
+     function mostrarOpcion() {
+            const seleccion = document.getElementById("opciones").value;
+            const resultado = document.getElementById("resultado");
+            resultado.textContent = seleccion ? "Seleccionaste: " + seleccion : "";
+        }
+</script>
+
+
+</body>
+</html>

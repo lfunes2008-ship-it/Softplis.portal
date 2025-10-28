@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider de Fondo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+  <header id="slider">
+    <h1>BOHEMIAN RHAPSODY</h1>
+  </header>
+
+  
+  <script>
+    const slider = document.getElementById("slider");
+
+    
+    const imagenes = [
+      "img/Bohemian+Rhapsody.jpg",
+      "img/Estrenos-de-peliculas-2025.jpg",
+      "img/884b672f5e2075e475cbfa24a3b389fa.jpg"
+    ];
+
+    let index = 0;
+
+    function cambiarFondo() {
+      slider.style.backgroundImage = `url(${imagenes[index]})`;
+      index = (index + 1) % imagenes.length;
+    }
+
+    cambiarFondo();                 
+    setInterval(cambiarFondo, 5000); 
+  </script>
+</body>
+</html>
