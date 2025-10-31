@@ -120,18 +120,18 @@ body {
 
 .boton {
   margin-top: 10px;
-  background: gold;
-  border: none;
   padding: 10px 20px;
-  color: #000;
-  font-weight: bold;
-  border-radius: 25px;
+  background-color: #ff3c00;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
   cursor: pointer;
-  transition: 0.3s;
+  transition: background 0.3s;
 }
 
 .boton:hover {
-  background: #fff;
+  background-color: #e62e00;
 }
 
 

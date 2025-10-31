@@ -1,0 +1,292 @@
+/* 🎬 ESTILO MODERNO SOFTPLIS (Inspirado en IMDb) */
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #0d0d0d;
+  color: #fff;
+}
+
+/* === NAVBAR === */
+.navbar {
+  background: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  border-bottom: 1px solid #333;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.navbar .logo {
+  color: gold;
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.navbar a {
+  color: #ddd;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: gold;
+}
+
+.buscador {
+  background-color: #222;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+  color: #fff;
+}
+
+/* === SLIDER === */
+.contenedor {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto;
+  width: 90%;
+  gap: 20px;
+}
+
+.destacado {
+  flex: 3;
+  position: relative;
+}
+
+.slider {
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 6px 25px rgba(255, 215, 0, 0.15);
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: 460px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 25px;
+  left: 30px;
+  background: rgba(0, 0, 0, 0.65);
+  padding: 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(4px);
+}
+
+.overlay h2 {
+  font-size: 1.6em;
+  color: gold;
+}
+
+.overlay span {
+  color: #ccc;
+  font-size: 0.9em;
+}
+
+.overlay p {
+  color: #ddd;
+  margin: 8px 0;
+}
+
+.info span {
+  margin-right: 10px;
+  color: #aaa;
+  font-size: 0.9em;
+}
+
+.boton {
+  background: gold;
+  border: none;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.boton:hover {
+  background: #fff;
+}
+
+/* === CONTROLES SLIDER === */
+.controles {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.controles button {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: gold;
+  font-size: 2rem;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.controles button:hover {
+  background: gold;
+  color: #000;
+}
+
+/* === LISTA LATERAL === */
+.lista-nueva {
+  flex: 1;
+  background: #141414;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.1);
+  height: fit-content;
+}
+
+.lista-nueva h2 {
+  color: gold;
+  margin-bottom: 15px;
+}
+
+.trailer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #222;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.trailer:hover {
+  background: #1f1f1f;
+}
+
+.trailer img {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.trailer h4 {
+  margin: 0;
+  font-size: 1em;
+  color: #fff;
+}
+
+.trailer p {
+  margin: 2px 0;
+  color: #aaa;
+  font-size: 0.9em;
+}
+
+/* === SECCIONES === */
+.destacado-hoy, .populares, .lista-videos {
+  padding: 50px 8%;
+  background-color: #000;
+}
+
+.destacado-hoy h2,
+.populares h2 {
+  color: gold;
+  margin-bottom: 25px;
+  font-size: 1.8em;
+}
+
+.destacado-hoy .peliculas {
+  display: flex;
+  gap: 10px;
+}
+
+.destacado-hoy img {
+  width: 120px;
+  height: 180px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.destacado-hoy img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px gold;
+}
+
+.populares .contenedor-cards {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.card {
+  flex: 0 0 auto;
+  width: 180px;
+  background-color: #111;
+  border-radius: 10px;
+  overflow: hidden;
+  scroll-snap-align: start;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.card .info {
+  padding: 10px;
+  text-align: center;
+}
+
+/* === LISTA DE VIDEOS === */
+.lista-videos {
+  text-align: center;
+  border-top: 1px solid #222;
+}
+
+.icono {
+  background: #111;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin: 0 auto 10px;
+  font-size: 24px;
+}
+
+.texto p {
+  color: #ccc;
+}
+
+/* === FOOTER === */
+footer {
+  background: #111;
+  text-align: center;
+  padding: 20px;
+  color: #888;
+  font-size: 0.9em;
+}

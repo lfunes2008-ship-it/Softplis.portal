@@ -1,0 +1,159 @@
+:root {
+  --bg: #0e0e0e;
+  --card: #1c1c1c;
+  --accent: #e50914;
+  --text: #ffffff;
+  --muted: #aaaaaa;
+  --radius: 14px;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  background-color: #151515;
+  border-bottom: 2px solid var(--accent);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.logo {
+  background-color: var(--accent);
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 8px 12px;
+  border-radius: var(--radius);
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.search input {
+  padding: 8px 10px;
+  border-radius: var(--radius);
+  border: 1px solid #333;
+  background: #111;
+  color: white;
+}
+
+/* Botones */
+.btn {
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn.ghost {
+  background: none;
+  border: 1px solid var(--accent);
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.hero-card {
+  max-width: 450px;
+}
+
+.hero-actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.7rem;
+}
+
+.hero select {
+  background: #111;
+  color: white;
+  border: 1px solid #333;
+  border-radius: var(--radius);
+  padding: 8px;
+}
+
+/* Poster */
+.poster {
+  width: 280px;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--radius);
+  box-shadow: 0 0 15px #000;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 1.5rem;
+}
+
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.thumb {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+.meta {
+  padding: 10px;
+}
+
+.meta h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.rating {
+  color: var(--accent);
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  color: var(--muted);
+  border-top: 1px solid #222;
+  font-size: 0.9rem;
+}

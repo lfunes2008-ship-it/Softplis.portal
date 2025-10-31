@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal de Películas</title>
+  <link rel="stylesheet" href="Style_SegundaParte.css">
+</head>
+<body>
+
+  
+  <header class="navbar">
+    <div class="logo">SoftPlis</div>
+    <nav>
+      <ul>
+        <li><a href="#">Menú</a></li>
+        <li><a href="#">Todo</a></li>
+        <li><a href="#">Lista</a></li>
+        <li><a href="#">Iniciar sesión</a></li>
+      </ul>
+    </nav>
+    <input type="text" placeholder="Buscar... 🔍" class="buscador">
+  </header>
+
+ 
+  <main class="contenedor">
+    
+    
+    <section class="destacado">
+      <div class="slider">
+        <div class="slide active">
+          <img src="img/Bohemian+Rhapsody.jpg" alt="Bohemian Rhapsody">
+          <div class="overlay">
+            <h2>Bryan Singer<br><span>'Bohemian Rhapsody'</span></h2>
+            <p>Watch the Trailer</p>
+            <div class="info">
+              <span>⏱️ 2:27</span>
+              <span>❤️ 387</span>
+              <span>👍 1.2k</span>
+            </div>
+            <button class="boton" onclick="window.location.href='Trailers.html'">▶ Reproducir</button>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="img/poster invincible.jpg" alt="Invincible">
+          <div class="overlay">
+            <h2>Watch the Season 4 Burge Mart Teaser<br><span>'Invincible'</span></h2>
+            <p>Watch the Trailer</p>
+            <div class="info">
+              <span>⏱️ 3:01</span>
+              <span>❤️ 624</span>
+              <span>👍 2.3k</span>
+            </div>
+            <button class="boton" onclick="window.location.href='Trailer invincible.html'">▶ Reproducir</button>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="img/jungle.jpg" alt="Jungle Cruise">
+          <div class="overlay">
+            <h2>Jungle Cruise<br><span>Disney</span></h2>
+            <p>Watch the Trailer</p>
+            <div class="info">
+              <span>⏱️ 1:59</span>
+              <span>❤️ 210</span>
+              <span>👍 900</span>
+            </div>
+            <button class="boton" onclick="window.location.href='Trailer_JungleCruise.html'">▶ Reproducir</button>
+          </div>
+        </div>
+
+        <div class="controles">
+          <button class="prev">❮</button>
+          <button class="next">❯</button>
+        </div>
+      </div>
+    </section>
+
+    
+    <aside class="lista">
+      <h3>A continuación</h3>
+
+      <div class="trailer">
+        <img src="img/884b672f5e2075e475cbfa24a3b389fa.jpg" alt="Karate Kid">
+        <div>
+          <h4>'Karate Kid: Leyenda'</h4>
+          <p>Watch the Trailer</p>
+          <span>⏱️ 2:05</span>
+        </div>
+      </div>
+
+      <div class="trailer">
+        <img src="img/mala influencia.jpg" alt="Mala Influencia">
+        <div>
+          <h4>'Mala Influencia'</h4>
+          <p>Starring Jennifer Lawrence</p>
+          <span>⏱️ 2:02</span>
+        </div>
+      </div>
+
+      <a href="#" class="explorar">Explorar tráilers →</a>
+    </aside>
+
+  </main>
+
+  <section class="destacado-hoy">
+  <h2>Destacado hoy</h2>
+
+  <div class="fila">
+    <div class="grupo">
+      <div class="peliculas">
+        <img src="img/Black phone.jpg" alt="Lista 1">
+        <img src="img/it-welcome-to-derry-official-poster-pennywise.jpg" alt="Welcome to Derry">
+        <img src="img/the witcher.jpg" alt="The Witcher">
+      </div>
+      <h4></h4> Picks: What to Watch in October</h4>
+      <a href="#">See our picks</a>
+    </div>
+
+    <div class="grupo">
+      <div class="peliculas">
+        <img src="img/Frankestein 2025.jpg" alt="Frankenstein">
+        <img src="img/keeper.jpg" alt="Red Mask">
+        <img src="img/the hand.jpeg" alt="The Hand That Rocks the Cradle">
+      </div>
+      <h4>The Best New and Upcoming Horror</h4>
+      <a href="#">See the list</a>
+    </div>
+  </div>
+</section>
+
+<section class="populares">
+  <h2>🎬 Selecciones populares</h2>
+  <p>Programas de TV y películas para ti</p>
+
+  <div class="contenedor-cards">
+    <div class="card">
+      <img src="img/the last.jpg" alt="The Last of Us">
+      <div class="info">
+        <span class="rating">⭐ 8.5</span>
+        <h3>The Last of Us</h3>
+        <button class="boton" onclick="window.location.href='Trailer_the last of us.html'">Tráiler</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="img/breaking.jpg" alt="Breaking Bad">
+      <div class="info">
+        <span class="rating">⭐ 9.5</span>
+        <h3>Breaking Bad</h3>
+        <button class="boton">Tráiler</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="img/Avengers_Infinity_War.jpg" alt="Avengers Infinity War">
+      <div class="info">
+        <span class="rating">⭐ 8.4</span>
+        <h3>Avengers: Infinity War</h3>
+        <button>Tráiler</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="img/superman-mini.jpg" alt="Superman">
+      <div class="info">
+        <span class="rating">⭐ 7.1</span>
+        <h3>Superman</h3>
+        <button>Tráiler</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="img/boy.jpg" alt="The Boys">
+      <div class="info">
+        <span class="rating">⭐ 8.6</span>
+        <h3>The Boys</h3>
+        <button>Tráiler</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="img/batman.jpg" alt="Batman El Caballero de la Noche">
+      <div class="info">
+        <span class="rating">⭐ 9.1</span>
+        <h3>Batman: El caballero de la noche</h3>
+        <button>Tráiler</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="lista-videos">
+  <h2>📺 De tu lista de videos</h2>
+
+  <div class="lista-contenido">
+    <div class="icono">
+      <span>＋</span>
+    </div>
+
+    <div class="texto">
+      <h3>Inicia sesión para acceder a tu lista de visualización</h3>
+      <p>Guarda programas y películas para hacer un seguimiento de lo que quieres ver.</p>
+      <button id="btn-login">Inicia sesión en SoftPlis</button>
+    </div>
+  </div>
+</section>
+
+<script>
+  // ====== BOTÓN DE INICIO DE SESIÓN ======
+  const boton = document.getElementById("btn-login");
+  boton.addEventListener("click", () => {
+    alert("✨ Bienvenido, pronto podrás guardar tus películas favoritas.");
+  });
+
+  // ====== LISTA DE PELÍCULAS ======
+  const peliculas = [
+    { 
+      titulo: "Bohemian Rhapsody", 
+      imagenMini: "img/bohemian-mini.jpg", 
+      imagenGrande: "img/bohemian-grande.jpg", 
+      desc: "La historia de Freddie Mercury y Queen.",
+      trailer: "Trailers.html"
+    },
+    { 
+      titulo: "Invincible", 
+      imagenMini: "img/burgemart-mini.jpg", 
+      imagenGrande: "img/burgemart-grande.jpg", 
+      desc: "La temporada 4 llega con más acción y drama.",
+      trailer: "Trailer Invincible.html"
+    },
+    { 
+      titulo: "Jungle Cruise", 
+      imagenMini: "img/junglecruise-mini.jpg", 
+      imagenGrande: "img/junglecruise-grande.jpg", 
+      desc: "Aventura inspirada en la atracción de Disney.",
+      trailer: "Trailer_JungleCruise.html"
+    },
+    { 
+      titulo: "Oppenheimer", 
+      imagenMini: "img/oppenheimer-mini.jpg", 
+      imagenGrande: "img/oppenheimer-grande.jpg", 
+      desc: "La mente detrás de la bomba atómica.",
+      trailer: "Trailer_Oppenheimer.html"
+    }
+  ];
+
+  // ====== ELEMENTOS PRINCIPALES ======
+  const slidePrincipal = document.querySelector(".slide.active img");
+  const tituloPrincipal = document.querySelector(".slide.active h2");
+  const descPrincipal = document.querySelector(".slide.active p");
+  const botonReproducir = document.querySelector(".slide.active .boton");
+  const listaAside = document.querySelector(".lista");
+  const next = document.querySelector(".next");
+  const prev = document.querySelector(".prev");
+  let indice = 0;
+
+  // ====== ACTUALIZAR LISTA LATERAL ======
+  function actualizarAside() {
+    listaAside.innerHTML = "<h3>A continuación</h3>";
+    for (let i = 1; i <= 2; i++) {
+      let idx = (indice + i) % peliculas.length;
+      const p = peliculas[idx];
+      const div = document.createElement("div");
+      div.classList.add("trailer");
+      div.innerHTML = `
+        <img src="${p.imagenMini}" alt="${p.titulo}">
+        <div>
+          <h4>'${p.titulo}'</h4>
+          <p>${p.desc}</p>
+          <span>⏱️ 2:00</span>
+        </div>
+      `;
+      listaAside.appendChild(div);
+    }
+    const explorar = document.createElement("a");
+    explorar.href = "#";
+    explorar.classList.add("explorar");
+    explorar.textContent = "Explorar tráilers →";
+    listaAside.appendChild(explorar);
+  }
+
+  // ====== CAMBIAR SLIDE PRINCIPAL ======
+  function cambiarSlide(nuevoIndice) {
+    indice = (nuevoIndice + peliculas.length) % peliculas.length;
+    const p = peliculas[indice];
+
+    // Transición suave
+    slidePrincipal.classList.add("fade");
+    tituloPrincipal.classList.add("fade");
+    descPrincipal.classList.add("fade");
+    botonReproducir.classList.add("fade");
+
+    setTimeout(() => {
+      slidePrincipal.src = p.imagenGrande;
+      slidePrincipal.alt = p.titulo;
+      tituloPrincipal.innerHTML = `${p.titulo}`;
+      descPrincipal.textContent = p.desc;
+      botonReproducir.setAttribute("onclick", `window.location.href='${p.trailer}'`);
+      actualizarAside();
+    }, 300);
+
+    setTimeout(() => {
+      slidePrincipal.classList.remove("fade");
+      tituloPrincipal.classList.remove("fade");
+      descPrincipal.classList.remove("fade");
+      botonReproducir.classList.remove("fade");
+    }, 600);
+  }
+
+  // ====== CONTROLES ======
+  next.addEventListener("click", () => cambiarSlide(indice + 1));
+  prev.addEventListener("click", () => cambiarSlide(indice - 1));
+
+  // ====== CAMBIO AUTOMÁTICO ======
+  setInterval(() => cambiarSlide(indice + 1), 6000);
+
+  // ====== INICIALIZAR ======
+  cambiarSlide(0);
+</script>
+
+
+
+</body>
+</html>

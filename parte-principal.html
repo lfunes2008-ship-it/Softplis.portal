@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SoftPlis — Recomendador de Películas</title>
+  <link rel="stylesheet" href="parte-principal.css">
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo">SP</div>
+      <div>
+        <h1>SoftPlis</h1>
+        <div class="tag">Recomendador de películas</div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <div class="search">
+        <input id="search" placeholder="Buscar película..." />
+      </div>
+      <button class="btn" id="recommendBtn">Recomiéndame</button>
+      <button class="btn ghost" id="shuffleBtn">Aleatorio</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-card">
+        <h2 id="heroTitle">¿Qué ver hoy?</h2>
+        <p id="heroDesc">Pulsa "Recomiéndame" o "Aleatorio" para recibir una sugerencia.</p>
+        <div class="hero-actions">
+          <select id="genreFilter">
+            <option value="">Todos los géneros</option>
+          </select>
+          <select id="minRating">
+            <option value="0">Todas las puntuaciones</option>
+            <option value="7">7+</option>
+            <option value="8">8+</option>
+            <option value="9">9+</option>
+          </select>
+          <button class="btn" id="detailsBtn">Ver detalles</button>
+        </div>
+      </div>
+
+      <div class="carousel">
+        <div id="poster" class="poster" style="background-image:url('posters/poster-01.jpg')"></div>
+      </div>
+    </section>
+
+    <section>
+      <h3>Recomendaciones</h3>
+      <div class="grid" id="grid"></div>
+    </section>
+  </main>
+
+  <footer>© 2025 SoftPlis — Minimalismo en Rojo, Negro y Blanco</footer>
+
+  <script>
+ // 🎥 SoftPlis - Recomendador de Películas
+
+const movies = [
+  { 
+    id: 1, 
+    title: "Bohemian Rhapsody", 
+    genre: "Biografía / Música", 
+    poster: "img/bohemian-grande.jpg", 
+    description: "La historia de Freddie Mercury y la legendaria banda Queen, desde sus inicios hasta su icónica actuación en Live Aid." 
+  },
+  { 
+    id: 2, 
+    title: "Jungle Cruise", 
+    genre: "Aventura / Fantasía", 
+    poster: "img/junglecruise-mini.jpg", 
+    description: "Una exploradora y un capitán intrépido viajan a través del Amazonas en busca de un árbol con poderes curativos." 
+  },
+  { 
+    id: 3, 
+    title: "John Wick 4", 
+    genre: "Acción / Suspenso", 
+    poster: "img/wick4.jpg", 
+    description: "John Wick se enfrenta a nuevos enemigos en su lucha por la libertad en la entrega más intensa de la saga." 
+  },
+  { 
+    id: 4, 
+    title: "Super Mario Bros: La Película", 
+    genre: "Animación / Aventura", 
+    poster: "img/mario.jpg", 
+    description: "Mario y Luigi deben salvar el Reino Champiñón de las garras de Bowser en una divertida aventura animada." 
+  },
+  { 
+    id: 5, 
+    title: "Spider-Man: Across the Spider-Verse", 
+    genre: "Animación / Superhéroes", 
+    poster: "img/spiderman.jpg", 
+    description: "Miles Morales se une a un equipo de Spider-Personas para enfrentar una amenaza que pone en riesgo el multiverso." 
+  },
+  { 
+    id: 6, 
+    title: "Oppenheimer", 
+    genre: "Drama / Historia", 
+    poster: "img/oppenheimer.jpg", 
+    description: "El físico J. Robert Oppenheimer lidera la creación de la bomba atómica en una historia de poder, ciencia y dilemas morales." 
+  }
+];
+
+const heroImg = document.getElementById("heroImg");
+const heroTitle = document.getElementById("heroTitle");
+const heroDesc = document.getElementById("heroDesc");
+const movieGrid = document.getElementById("movieGrid");
+
+// Mostrar las películas en la cuadrícula
+function renderMovies() {
+  movieGrid.innerHTML = "";
+  movies.forEach((movie) => {
+    const card = document.createElement("div");
+    card.classList.add("movie-card");
+    card.innerHTML = `
+      <img src="${movie.poster}" alt="${movie.title}">
+      <h3>${movie.title}</h3>
+      <p>${movie.genre}</p>
+    `;
+    card.addEventListener("click", () => updateHero(movie));
+    movieGrid.appendChild(card);
+  });
+}
+
+// Actualizar el banner principal
+function updateHero(movie) {
+  heroImg.src = movie.poster;
+  heroTitle.textContent = movie.title;
+  heroDesc.textContent = movie.description;
+}
+
+// Botón de detalles
+const detailsBtn = document.getElementById("detailsBtn");
+if (detailsBtn) {
+  detailsBtn.addEventListener("click", () => {
+    alert(heroTitle.textContent + "\n\n" + heroDesc.textContent);
+  });
+}
+
+// Iniciar la app
+renderMovies();
+updateHero(movies[0]);
+
+  </script>
+</body>
+</html>
