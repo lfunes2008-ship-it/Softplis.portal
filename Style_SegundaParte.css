@@ -1,4 +1,3 @@
-
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -6,7 +5,7 @@ body {
   color: #fff;
 }
 
-
+/* === NAVBAR === */
 .navbar {
   background-color: #1a1a1a;
   color: gold;
@@ -14,6 +13,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 15px 40px;
+  flex-wrap: wrap;
 }
 
 .navbar .logo {
@@ -25,6 +25,8 @@ body {
   list-style: none;
   display: flex;
   gap: 25px;
+  margin: 10px 0 0;
+  padding: 0;
 }
 
 .navbar ul li a {
@@ -43,16 +45,17 @@ body {
   padding: 8px 15px;
   color: #fff;
   border-radius: 20px;
+  margin-left: 15px;
 }
 
-
+/* === CONTENEDOR PRINCIPAL === */
 .contenedor {
   display: flex;
   justify-content: space-between;
   margin: 20px;
   gap: 20px;
+  flex-wrap: wrap;
 }
-
 
 .destacado {
   flex: 3;
@@ -88,7 +91,6 @@ body {
   border-radius: 15px;
 }
 
-
 .overlay {
   position: absolute;
   bottom: 30px;
@@ -97,6 +99,7 @@ body {
   padding: 20px;
   border-radius: 10px;
   color: #fff;
+  max-width: 80%;
 }
 
 .overlay h2 {
@@ -134,7 +137,7 @@ body {
   background-color: #e62e00;
 }
 
-
+/* === CONTROLES === */
 .controles {
   position: absolute;
   width: 100%;
@@ -160,7 +163,7 @@ body {
   color: #000;
 }
 
-
+/* === LISTA LATERAL === */
 .lista {
   flex: 1;
   background-color: #1a1a1a;
@@ -217,7 +220,7 @@ body {
   text-decoration: underline;
 }
 
-
+/* === SECCIÓN DESTACADO === */
 .destacado-hoy {
   background-color: #000;
   color: #fff;
@@ -239,11 +242,7 @@ body {
   justify-content: center;
 }
 
-.destacado-hoy .grupo {
-  max-width: 420px;
-  text-align: left;
-}
-
+/* === PELÍCULAS DESTACADAS === */
 .destacado-hoy .peliculas {
   display: flex;
   gap: 8px;
@@ -269,33 +268,6 @@ body {
   box-shadow: 0 0 12px #ffcc00;
 }
 
-.destacado-hoy h4 {
-  font-size: 1em;
-  margin: 5px 0;
-  color: #fff;
-}
-
-.destacado-hoy a {
-  display: inline-block;
-  color: #4da6ff;
-  text-decoration: none;
-  font-size: 0.9em;
-  font-weight: bold;
-  margin-top: 2px;
-}
-
-.destacado-hoy a:hover {
-  text-decoration: underline;
-}
-
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #111;
-  color: #777;
-  font-size: 0.9em;
-}
 
 .populares {
   background-color: #000;
@@ -468,18 +440,18 @@ button:hover {
   padding-left: 10px;
 }
 
-/* 🔹 CONTENEDOR HORIZONTAL */
+
 .contenedor-peliculas {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   gap: 25px;
-  flex-wrap: nowrap; /* todo en una sola fila */
-  overflow-x: auto; /* scroll horizontal si no cabe */
+  flex-wrap: nowrap; 
+  overflow-x: auto; 
   padding-bottom: 10px;
 }
 
-/* 🔸 TARJETA GENERAL */
+
 .pelicula.horizontal {
   background-color: #1a1a1a;
   border-radius: 10px;
@@ -547,7 +519,7 @@ button:hover {
   line-height: 1.4;
 }
 
-/* 🔸 RANKING */
+
 .ranking {
   position: absolute;
   top: 10px;
@@ -560,24 +532,120 @@ button:hover {
   font-size: 14px;
 }
 
-/* 🔥 DESTACADA */
+
 .pelicula.destacada {
   transform: scale(1.1);
   border: 2px solid #f5c518;
 }
 
-/* 🔹 RESPONSIVO */
-@media (max-width: 768px) {
-  .contenedor-peliculas {
-    flex-wrap: nowrap;
-    overflow-x: scroll;
+/* === FOOTER === */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #111;
+  color: #777;
+  font-size: 0.9em;
+}
+
+/* === RESPONSIVE === */
+
+/* 📱 Tablet */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 10px 20px;
   }
 
-  .pelicula.horizontal {
-    width: 240px;
+  .navbar ul {
+    gap: 15px;
   }
 
-  .pelicula img {
-    height: 300px;
+  .contenedor {
+    flex-direction: column;
+  }
+
+  .lista {
+    order: 2;
+  }
+
+  .destacado {
+    order: 1;
+  }
+
+  .slide img {
+    height: 380px;
+  }
+
+  .overlay {
+    bottom: 20px;
+    left: 20px;
+    padding: 15px;
+  }
+}
+
+/* 📱 Móvil */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .navbar .logo {
+    margin-bottom: 10px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .buscador {
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  .contenedor {
+    margin: 10px;
+  }
+
+  .slide img {
+    height: 280px;
+  }
+
+  .overlay {
+    position: relative;
+    background: none;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+  }
+
+  .overlay h2 {
+    font-size: 1.3em;
+  }
+
+  .overlay p {
+    font-size: 0.9em;
+  }
+
+  .lista {
+    padding: 15px;
+  }
+
+  .trailer img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .trailer h4 {
+    font-size: 0.9em;
+  }
+
+  .destacado-hoy {
+    padding: 25px 15px;
+  }
+
+  footer {
+    font-size: 0.8em;
   }
 }

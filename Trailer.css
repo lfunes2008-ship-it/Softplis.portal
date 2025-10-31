@@ -13,7 +13,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ===== NAVBAR ===== */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -62,7 +62,7 @@ body {
   color: #e50914;
 }
 
-/* ===== CONTENEDOR PRINCIPAL ===== */
+
 .contenedor {
   display: flex;
   justify-content: space-between;
@@ -72,7 +72,7 @@ body {
   flex-wrap: wrap;
 }
 
-/* ===== TRAILER PRINCIPAL ===== */
+
 .trailer-principal {
   flex: 2.5;
   background: linear-gradient(180deg, #111, #0a0a0a);
@@ -142,7 +142,7 @@ body {
   transform: scale(1.2);
 }
 
-/* ===== LISTA DE TRAILERS ===== */
+
 .lista-trailers {
   flex: 1;
   background: #1a1a1a;
@@ -178,7 +178,7 @@ body {
   padding-bottom: 0.5rem;
 }
 
-/* ===== TARJETAS DE TRAILERS ===== */
+
 .card {
   display: flex;
   align-items: flex-start;
@@ -197,7 +197,7 @@ body {
   box-shadow: 0 4px 16px rgba(229, 9, 20, 0.5);
 }
 
-/* Imagen más grande en formato 9:16 */
+
 .card img {
   width: 110px;
   aspect-ratio: 9 / 16;
@@ -208,7 +208,7 @@ body {
   flex-shrink: 0;
 }
 
-/* Texto */
+
 .card div {
   display: flex;
   flex-direction: column;
@@ -235,7 +235,7 @@ body {
   font-size: 0.8rem;
 }
 
-/* Descripción corta */
+
 .card .desc-corta {
   font-size: 0.75rem;
   color: #ccc;
@@ -243,7 +243,7 @@ body {
   line-height: 1.2;
 }
 
-/* ===== FOOTER ===== */
+
 footer {
   text-align: center;
   padding: 1.5rem;
@@ -254,7 +254,7 @@ footer {
   font-size: 0.9rem;
 }
 
-/* ===== RESPONSIVE ===== */
+
 @media (max-width: 900px) {
   .contenedor {
     flex-direction: column;
