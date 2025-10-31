@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SoftPlis | The Conjuring (El Conjuro)</title>
-  <link rel="stylesheet" href="Trailer_TheConjuring.css">
+  <link rel="stylesheet" href="Trailer.css">
 </head>
 <body>
 
@@ -20,8 +20,8 @@
 
 <main class="contenedor">
   <section class="trailer-principal">
-    <video id="video" controls poster="img/theconjuring-grande.jpg">
-      <source src="TheConjuring_Trailer.mp4" type="video/mp4">
+    <video id="video" controls poster="img/Conjuro-grande.png">
+      <source src="EL conjuro.mp4" type="video/mp4">
     </video>
 
     <div class="info">
