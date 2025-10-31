@@ -260,6 +260,11 @@ footer {
     flex-direction: column;
   }
 
+  
+  .navbar ul {
+    gap: 15px;
+  }
+  
   .trailer-principal video {
     height: 280px;
   }
