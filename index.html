@@ -206,13 +206,13 @@
 </section>
 
 <script>
-  // ====== BOTÓN DE INICIO DE SESIÓN ======
+  
   const boton = document.getElementById("btn-login");
   boton.addEventListener("click", () => {
     alert("✨ Bienvenido, pronto podrás guardar tus películas favoritas.");
   });
 
-  // ====== LISTA DE PELÍCULAS ======
+  
   const peliculas = [
     { 
       titulo: "Bohemian Rhapsody", 
@@ -244,7 +244,7 @@
     }
   ];
 
-  // ====== ELEMENTOS PRINCIPALES ======
+  
   const slidePrincipal = document.querySelector(".slide.active img");
   const tituloPrincipal = document.querySelector(".slide.active h2");
   const descPrincipal = document.querySelector(".slide.active p");
@@ -254,7 +254,7 @@
   const prev = document.querySelector(".prev");
   let indice = 0;
 
-  // ====== ACTUALIZAR LISTA LATERAL ======
+  
   function actualizarAside() {
     listaAside.innerHTML = "<h3>A continuación</h3>";
     for (let i = 1; i <= 2; i++) {
@@ -279,12 +279,12 @@
     listaAside.appendChild(explorar);
   }
 
-  // ====== CAMBIAR SLIDE PRINCIPAL ======
+  
   function cambiarSlide(nuevoIndice) {
     indice = (nuevoIndice + peliculas.length) % peliculas.length;
     const p = peliculas[indice];
 
-    // Transición suave
+    
     slidePrincipal.classList.add("fade");
     tituloPrincipal.classList.add("fade");
     descPrincipal.classList.add("fade");
@@ -307,14 +307,14 @@
     }, 600);
   }
 
-  // ====== CONTROLES ======
+  
   next.addEventListener("click", () => cambiarSlide(indice + 1));
   prev.addEventListener("click", () => cambiarSlide(indice - 1));
 
-  // ====== CAMBIO AUTOMÁTICO ======
+  
   setInterval(() => cambiarSlide(indice + 1), 6000);
 
-  // ====== INICIALIZAR ======
+ 
   cambiarSlide(0);
 </script>
 

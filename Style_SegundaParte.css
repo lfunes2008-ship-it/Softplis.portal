@@ -5,7 +5,7 @@ body {
   color: #fff;
 }
 
-/* === NAVBAR === */
+
 .navbar {
   background-color: #1a1a1a;
   color: gold;
@@ -48,7 +48,7 @@ body {
   margin-left: 15px;
 }
 
-/* === CONTENEDOR PRINCIPAL === */
+
 .contenedor {
   display: flex;
   justify-content: space-between;
@@ -137,7 +137,7 @@ body {
   background-color: #e62e00;
 }
 
-/* === CONTROLES === */
+
 .controles {
   position: absolute;
   width: 100%;
@@ -163,7 +163,7 @@ body {
   color: #000;
 }
 
-/* === LISTA LATERAL === */
+/*lD*/
 .lista {
   flex: 1;
   background-color: #1a1a1a;
@@ -220,7 +220,7 @@ body {
   text-decoration: underline;
 }
 
-/* === SECCIÓN DESTACADO === */
+
 .destacado-hoy {
   background-color: #000;
   color: #fff;
@@ -242,7 +242,7 @@ body {
   justify-content: center;
 }
 
-/* === PELÍCULAS DESTACADAS === */
+
 .destacado-hoy .peliculas {
   display: flex;
   gap: 8px;
@@ -469,7 +469,7 @@ button:hover {
   box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
 }
 
-/* 🔸 IMAGEN */
+
 .pelicula img {
   width: 100%;
   height: 360px;
@@ -477,7 +477,7 @@ button:hover {
   border-radius: 10px;
 }
 
-/* 🔸 INFO */
+
 .info {
   text-align: left;
   width: 100%;
@@ -538,7 +538,7 @@ button:hover {
   border: 2px solid #f5c518;
 }
 
-/* === FOOTER === */
+
 footer {
   text-align: center;
   padding: 20px;
@@ -547,9 +547,7 @@ footer {
   font-size: 0.9em;
 }
 
-/* === RESPONSIVE === */
 
-/* 📱 Tablet */
 @media (max-width: 1024px) {
   .navbar {
     padding: 10px 20px;
@@ -582,7 +580,6 @@ footer {
   }
 }
 
-/* 📱 Móvil */
 @media (max-width: 600px) {
   .navbar {
     flex-direction: column;
