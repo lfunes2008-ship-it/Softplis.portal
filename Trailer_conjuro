@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SoftPlis | The Conjuring (El Conjuro)</title>
+  <link rel="stylesheet" href="Trailer_TheConjuring.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo"><a href="Segunda_Parte_Modern.html">🎥 SoftPlis</a></div>
+  <input type="text" class="buscador" placeholder="Buscar... 🔍">
+  <nav class="menu">
+    <a href="#">Inicio</a>
+    <a href="#">Explorar</a>
+    <a href="#">Iniciar sesión</a>
+  </nav>
+</header>
+
+<main class="contenedor">
+  <section class="trailer-principal">
+    <video id="video" controls poster="img/theconjuring-grande.jpg">
+      <source src="TheConjuring_Trailer.mp4" type="video/mp4">
+    </video>
+
+    <div class="info">
+      <h2>The Conjuring (El Conjuro)</h2>
+      <p class="categoria">👻 Terror | Misterio | Sobrenatural</p>
+      <h3>Official Trailer</h3>
+      <p class="descripcion">
+        Basada en hechos reales, *El Conjuro* cuenta la historia de los investigadores paranormales Ed y Lorraine Warren,
+        quienes ayudan a una familia aterrorizada por una presencia oscura en su casa rural.
+        Lo que comienza como ruidos extraños se convierte en una lucha por sus vidas, 
+        enfrentándose a una de las fuerzas más demoníacas que jamás han encontrado.
+      </p>
+
+      <div class="reacciones">
+        <span>👍 5.6k</span>
+        <span>💀 3.2k</span>
+        <span>😱 2.4k</span>
+        <span>👎 198</span>
+        <span>🔥 1.1k</span>
+      </div>
+
+      <div class="botones">
+        <button class="btn-ver">🎬 Ver más detalles</button>
+        <button class="btn-compartir">🔗 Compartir</button>
+      </div>
+    </div>
+  </section>
+
+  <aside class="lista-trailers">
+    <h3>Más tráilers recomendados</h3>
+
+    <div class="card">
+      <img src="img/thenun-mini.jpg" alt="The Nun">
+      <div class="card-info">
+        <h4>The Nun (La Monja)</h4>
+        <p>⛪ Terror, Misterio</p>
+        <span>2:30</span>
+        <a href="Trailer_TheNun.html" class="btn-trailer">Ver tráiler →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="img/theboy-mini.jpg" alt="The Boy">
+      <div class="card-info">
+        <h4>The Boy</h4>
+        <p>🪆 Terror, Suspenso</p>
+        <span>2:33</span>
+        <a href="Trailer_TheBoy.html" class="btn-trailer">Ver tráiler →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="img/it-mini.jpg" alt="IT (Eso)">
+      <div class="card-info">
+        <h4>IT (Eso)</h4>
+        <p>🎈 Terror, Misterio</p>
+        <span>2:55</span>
+        <a href="Trailer_IT.html" class="btn-trailer">Ver tráiler →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="img/bohemian-mini.jpg" alt="Bohemian Rhapsody">
+      <div class="card-info">
+        <h4>Bohemian Rhapsody</h4>
+        <p>🎤 Drama, Música</p>
+        <span>2:15</span>
+        <a href="Trailer_Bohemian.html" class="btn-trailer">Ver tráiler →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="img/oppenheimer-mini.jpg" alt="Oppenheimer">
+      <div class="card-info">
+        <h4>Oppenheimer</h4>
+        <p>💣 Drama, Biografía</p>
+        <span>3:02</span>
+        <a href="Trailer_Oppenheimer.html" class="btn-trailer">Ver tráiler →</a>
+      </div>
+    </div>
+
+    <a href="#" class="ver-mas">Ver todos los tráilers →</a>
+  </aside>
+</main>
+
+<footer>
+  <p>© 2025 SoftPlis | Portal de Tráilers • Desarrollado por Leonardo</p>
+</footer>
+
+</body>
+</html>
